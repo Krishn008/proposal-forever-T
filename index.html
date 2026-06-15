@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Trebuchet MS',sans-serif;
+}
+
+body{
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(-45deg,#ff9ecf,#ffd6e7,#ffc8dd,#ffe4ec);
+background-size:400% 400%;
+animation:bg 12s ease infinite;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.card{
+background:rgba(255,255,255,0.25);
+backdrop-filter:blur(10px);
+padding:40px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 0 30px rgba(255,255,255,.5);
+z-index:10;
+}
+
+h1{
+font-size:3rem;
+color:white;
+text-shadow:0 0 15px white;
+margin-bottom:25px;
+}
+
+p{
+font-size:1.2rem;
+color:white;
+margin-bottom:30px;
+}
+
+#yesBtn{
+padding:18px 50px;
+font-size:28px;
+border:none;
+border-radius:50px;
+cursor:pointer;
+margin-right:15px;
+box-shadow:0 0 20px pink;
+transition:.3s;
+}
+
+#yesBtn:hover{
+transform:scale(1.1);
+}
+
+#noBtn{
+position:absolute;
+padding:8px 15px;
+font-size:14px;
+border:none;
+border-radius:20px;
+cursor:pointer;
+}
+
+.floating{
+position:absolute;
+font-size:35px;
+animation:float linear infinite;
+}
+
+@keyframes float{
+from{
+transform:translateY(100vh);
+}
+to{
+transform:translateY(-120vh);
+}
+}
+
+#result{
+display:none;
+text-align:center;
+z-index:20;
+}
+
+#result img{
+width:300px;
+border-radius:25px;
+box-shadow:0 0 25px white;
+}
+
+#result h2{
+margin-top:20px;
+color:white;
+font-size:2.5rem;
+}
+
+#result p{
+font-size:1.4rem;
+color:white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="floating" style="left:5%;animation-duration:12s;">🎈</div>
+<div class="floating" style="left:15%;animation-duration:15s;">💖</div>
+<div class="floating" style="left:25%;animation-duration:10s;">💕</div>
+<div class="floating" style="left:40%;animation-duration:18s;">🎈</div>
+<div class="floating" style="left:60%;animation-duration:14s;">💝</div>
+<div class="floating" style="left:75%;animation-duration:11s;">💕</div>
+<div class="floating" style="left:90%;animation-duration:16s;">🎈</div>
+
+<div class="card" id="proposal">
+<h1>❤️ Will You Be My Forever? ❤️</h1>
+<p>You are my favorite person, my happiness and my home. 💖</p>
+
+<button id="yesBtn">YES 💍❤️</button>
+<button id="noBtn">No</button>
+</div>
+
+<div id="result">
+<img src="https://media.tenor.com/Jh6D6Nw8xJQAAAAC/cute-cat-love.gif">
+
+<h2>🥰 Best Decision Ever ❤️</h2>
+
+<p>
+Now you are officially stuck with me forever. 💖<br><br>
+I
+	◦	
